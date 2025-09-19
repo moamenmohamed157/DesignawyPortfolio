@@ -300,8 +300,12 @@ hr {
 
 .section-title {
     text-align: center;
-    color: var(--main-color);
+    color: var(--text-color);
     font-size: 2rem;
+}
+
+.section-title span {
+    color: var(--main-color);
 }
 
 .about-text {
@@ -342,21 +346,15 @@ hr {
     -o-transition: all 0.2s ease-in-out;
 }
 
-.about-text .english span,
-.about-text .arabic span {
+.about-text .english span {
+    text-align: center;
     font-weight: bold;
-    color: var(--secondary-color);
     font-size: 1.4rem;
-    font-family: var(--font-cairo);
-}
-
-.about-text .arabic p {
-    font-size: 1.2rem;
-    text-align: right;
-    font-family: var(--font-cairo);
+    color: var(--bg-color);
 }
 
 .about-text .english p {
+    color: var(--bg-color);
     font-size: 1.2rem;
     text-align: left;
 }
